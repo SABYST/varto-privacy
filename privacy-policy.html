@@ -16,7 +16,21 @@
       line-height: 1.65;
     }
     .wrap { max-width: 860px; margin: 0 auto; padding: 48px 20px 70px; }
-    .brand { font-size: 34px; font-weight: 800; letter-spacing: -1px; margin-bottom: 6px; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 6px;
+    }
+    .brand-logo {
+      width: 42px;
+      height: 42px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
     .sub { color: #9da5b4; margin-bottom: 36px; }
     .card {
       background: rgba(255,255,255,.045);
@@ -46,7 +60,10 @@
 </head>
 <body>
   <main class="wrap">
-    <div class="brand">VARTO</div>
+    <div class="brand">
+      <img src="./varto-icon.png" alt="VARTO" class="brand-logo">
+      <span>VARTO</span>
+    </div>
     <div class="sub">VARTO Finance</div>
 
     <section class="card">
@@ -128,7 +145,7 @@
 
       <h2>12. Контакти</h2>
       <p>З питань щодо цієї Політики конфіденційності або обробки персональних даних:</p>
-      <p><strong>VARTO</strong><br>Email: <a href="mailto:contact@varto.finance">contact.varto@gmail.com</a></p>
+      <p><strong>VARTO</strong><br>Email: <a href="mailto:contact@varto.finance">contact@varto.finance</a></p>
     </section>
 
     <footer>© 2026 VARTO Finance</footer>
